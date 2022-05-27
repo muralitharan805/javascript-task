@@ -5,11 +5,18 @@ import './style.css';
 var store = '';
 
 function test() {
-  console.log('hello');
+  // console.log('hello');
+  var getTextbox = document.getElementById('nameText');
+  console.log(getTextbox.value);
 
-  // document.getElementById('nameText').nodeValue;
+  var getDisplay = document.getElementById('display');
+  getDisplay.innerHTML = getTextbox.value;
 
-  // console.log(document.getElementById('nameText').nodeValue);
+  getTextbox.value = '';
 }
 
 console.log('hello');
+
+const btn = document.getElementById('getbtn');
+
+btn.addEventListener('click', test);
