@@ -1,0 +1,14 @@
+h1, h2 {
+  font-family: Lato;
+}
+
+.content{
+  /* border: 1px solid gray; */
+  display: flex;
+  justify-content: center;
+
+}
+
+.component{
+  margin: 2px;
+}
